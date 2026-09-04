@@ -2,7 +2,7 @@ $engine: 3
 $onesync: on
 name: Feather
 description: The official recipe for Feather Framework.
-version: 2.2.1
+version: 2.2.2
 author: bcc
 
 tasks:
@@ -97,6 +97,15 @@ tasks:
   - action: unzip
     src: ./temp/files/feather-hud.zip
     dest: ./resources/[feather]/feather-hud
+
+  # Menu v2
+  - action: download_file
+    path: ./temp/files/feather-menu-v2.zip
+    url: https://github.com/FeatherFramework/feather-menu-v2/releases/download/v2.0.0-alpha.2/feather-menu-v2.zip
+
+  - action: unzip
+    src: ./temp/files/feather-menu-v2.zip
+    dest: ./resources/[feather]/feather-menu-v2
 
   # Menu
   - action: download_file
